@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Contact Details</title>
+    <style media="screen">
+      body{
+        background-color: white;
+      }
+      hr{
+        border-color: red;
+        border-style: dotted;
+      }
+      label2{
+        color: pink;
+      }
+      label1{
+        color: red;
+      }
+      textarea{
+        background-color: #fff9b0;
+        border-left-width: 2px;
+        border-left-color: red;
+        border-top-width: 3px;
+        border-top-color: pink;
+      }
+      input{
+        background-color: #fff9b0;
+      }
+      input {
+        color: red;
+      }
+      img{
+        border-radius: 8px;
+        height: 300px;
+        width: 200px;
+      }
+      img:hover{
+        transform: scale3d();
+      }
+      div.polaroid{
+        width: 201px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+      }
+      div.container{
+        text-align: center;
+        color: red;
+        padding bottom : 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="polaroid">
+      <a href="IMG-20201219-WA0004.jpg"><img src="IMG-20201219-WA0004.jpg" alt=""></a>
+      <div class="container">
+        <p><strong><u>Manikanta</u></strong></p>
+      </div>
+    </div>
+
+
+    <p><strong><u>Address:</u></strong> 3-153,Behind Old Andhra Bank ,<a href="https://en.wikipedia.org/wiki/Malikipuram"><u>Malikipuram</u></a> ,<a href="https://en.wikipedia.org/wiki/East_Godavari"><strong><u>East Godavari District</u></strong></a>.</p>
+    <p><strong><u>Contact Number</u></strong>: 8790618202</p>
+    <p><strong><u>Email</u></strong>: ponnagantimanikanta26@gmail.com</p>
+    <hr>
+    <form action="mailto:191210028@nitdelhi.ac.in" method="post" enctype="multipart/form-data">
+      <label1><strong>Enter Name:</strong></label1>
+      <input type="text" name="MyName" value=""><br><br>
+      <label2><strong>Email:</strong></label2>
+      <input type="email" name="MyEmail" value=""><br><br>
+      <input type="file" name="File" value="">
+      <br>
+      <label>Enter your message:</label><br>
+      <textarea name="Message:" rows="8" cols="20"></textarea><br><br>
+      <label><strong>Do you want to send?</strong></label>
+      <input type="checkbox" name="" value=""><br><br>
+      <input type="submit" name="">
+    </form>
+  </body>
+</html>
