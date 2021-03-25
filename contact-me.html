@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>My Contact Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <style media="screen">
       body{
         background-color: white;
@@ -64,18 +67,27 @@
     <p><strong><u>Contact Number</u></strong>: 8790618202</p>
     <p><strong><u>Email</u></strong>: ponnagantimanikanta26@gmail.com</p>
     <hr>
-    <form action="mailto:191210028@nitdelhi.ac.in" method="post" enctype="multipart/form-data">
+    <script type="text/javascript">
+      function formvalidate() {
+                alert("hey im working");
+
+                return true;
+      }
+    </script>
+    <form action="index.html" onsubmit="formvalidate()">
       <label1><strong>Enter Name:</strong></label1>
-      <input type="text" name="MyName" value=""><br><br>
+      <input type="text" name="MyName" id="name" required><br><br>
       <label2><strong>Email:</strong></label2>
       <input type="email" name="MyEmail" value=""><br><br>
       <input type="file" name="File" value="">
       <br>
       <label>Enter your message:</label><br>
-      <textarea name="Message:" rows="8" cols="20"></textarea><br><br>
+      <textarea name="Message:" rows="8" cols="20" required></textarea><br><br>
       <label><strong>Do you want to send?</strong></label>
-      <input type="checkbox" name="" value=""><br><br>
-      <input type="submit" name="">
+      <input type="checkbox" name="" value="" required><br><br>
+      <input type="submit" >
     </form>
+
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
