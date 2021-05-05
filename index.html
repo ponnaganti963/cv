@@ -11,28 +11,46 @@
         height: 1px;
         width: 30%;
         border-style: dashed;
-
-      }
-      table{
-        border-color: blue;
-      }
-      img{
-        border-radius: 1;
       }
 
+    .flex{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .items{
+      margin-left: 10px;
+    }
+
+      a{
+        text-decoration: none;
+      }
+ img:hover{
+ animation :  opacity 1s linear;
+     }
+     @keyframes opacity {
+       from{
+         opacity: 1;
+       }
+       to{
+         opacity: 0.5;
+       }
+     }
     </style>
 
   </head>
   <body style="background-color: #eff8ff;">
-    <table>
-      <tr>
-        <td><img src="Manikanta1.png" alt="Image not found"></td>
-        <td>  <h1>℘onnaganti ℑai Ꮙenkata ℳanikanta</h1>
+    <div class="flex">
+      <div class="items">
+         <img src="Manikanta1.png" alt="Image not found">
+      </div>
+      <div class="items">
+        <h1>℘onnaganti ℑai Ꮙenkata ℳanikanta</h1>
           <p>I am studying in <strong><i><a href="https://nitdelhi.ac.in/">Nit Delhi</a></i></strong>.</p>
           <p>I am <strong><i><u>Computer Science Student</u></i></strong> and have great interest towards computer engineering.</p>
-</td>
-      </tr>
-    </table>
+      </div>
+    </div>
+
     <hr>
     <h2><u>My Hobbies</u>:</h2>
     <ul>
@@ -70,7 +88,9 @@
       </tbody>
     </table>
     <hr >
-    <a href="contact-me.html"><h4><u>Contact me:</u></h4></a>
+    <h2><a href="contact-me.html">Contact me:</a></h2>
+
+
     <h2><strong><i><u>Skills</u></i>:</strong></h2>
         <table cellspacing ="10">
           <tr>
@@ -94,5 +114,7 @@
             <td>⭐</td>
           </tr>
         </table>
-    <a href="register.html"><button>register</button></a>
+        
+
+        <a href="register.html"><button>register</button></a>
 </html>
