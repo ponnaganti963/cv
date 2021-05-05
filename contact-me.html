@@ -2,24 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Contact Details</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
     <style media="screen">
       body{
-        background-color: white;
+        background-color: #ccf2f4;
       }
       hr{
-        border-color: red;
-        border-style: dotted;
+       margin: auto;
+        border: none;
+        border-style:  dashed;
+        width: 75%;
+        border-top-width: 1px;
       }
-      label2{
-        color: pink;
-      }
-      label1{
-        color: red;
-      }
+
       textarea{
         background-color: #fff9b0;
         border-left-width: 2px;
@@ -33,25 +32,52 @@
       input {
         color: red;
       }
+
       img{
         border-radius: 8px;
         height: 300px;
         width: 200px;
+        /* transition: transform 1s ease-in-out; */
       }
       img:hover{
-        transform: scale3d();
+
       }
-      div.polaroid{
+   form, .mybody{
+     display: flex;;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+
+
+    .inform{
+      margin: 5px;
+    }
+    .polaroid{
+        text-align: center;
         width: 201px;
         background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 25px;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.2);
+
+        margin: 25px auto;
       }
-      div.container{
-        text-align: center;
-        color: red;
-        padding bottom : 20px;
+      .container{
+          text-align: center;
+          color: red;
+          padding bottom : 20px;
+        }
+      .container:hover{
+        animation: sample 2s linear  ease-in-out;
       }
+      @keyframes sample {
+        from {transform: scale(1.1);}
+        to{
+          transform: scale(2);
+        }
+
+      }
+
     </style>
   </head>
   <body>
@@ -61,33 +87,37 @@
         <p><strong><u>Manikanta</u></strong></p>
       </div>
     </div>
+    <div class="mybody">
+      <p><strong><u>Address:</u></strong> 3-153,Behind Old Andhra Bank ,<a href="https://en.wikipedia.org/wiki/Malikipuram"><u>Malikipuram</u></a> ,<a href="https://en.wikipedia.org/wiki/East_Godavari"><strong><u>East Godavari District</u></strong></a>.</p>
+      <a  href="tel:9666819823" ><button type="button" class="btn btn-lg btn-warning">call me</button></a>
 
-
-    <p><strong><u>Address:</u></strong> 3-153,Behind Old Andhra Bank ,<a href="https://en.wikipedia.org/wiki/Malikipuram"><u>Malikipuram</u></a> ,<a href="https://en.wikipedia.org/wiki/East_Godavari"><strong><u>East Godavari District</u></strong></a>.</p>
-    <p><strong><u>Contact Number</u></strong>: 8790618202</p>
-    <p><strong><u>Email</u></strong>: ponnagantimanikanta26@gmail.com</p>
+      <p><strong><u>Contact Number</u></strong>: 8790618202</p>
+      <p><strong><u>Email</u></strong>: ponnagantimanikanta26@gmail.com</p>
+    </div>
     <hr>
-    <script type="text/javascript">
-      function formvalidate() {
-                alert("hey im working");
+    <form >
+      <div class="inform">
+        <label1><strong>Enter Name:</strong></label1>
+        <input type="text" name="MyName" id="name" required>
+      </div>
+     <div class="inform">
+       <label2><strong>Email:</strong></label2>
+       <input type="email" name="MyEmail" value="">
+     </div>
+      <div class="inform">
+        <input type="file" name="File" value="">
 
-                return true;
-      }
-    </script>
-    <form action="index.html" onsubmit="return formvalidate()">
-      <label1><strong>Enter Name:</strong></label1>
-      <input type="text" name="MyName" id="name" required><br><br>
-      <label2><strong>Email:</strong></label2>
-      <input type="email" name="MyEmail" value=""><br><br>
-      <input type="file" name="File" value="">
-      <br>
-      <label>Enter your message:</label><br>
-      <textarea name="Message:" rows="8" cols="20" required></textarea><br><br>
-      <label><strong>Do you want to send?</strong></label>
-      <input type="checkbox" name="" value="" required><br><br>
-      <input type="submit" >
+      </div>
+      <div class="inform">
+        <label>Enter your message:</label><br>
+        <textarea name="Message:" rows="8" cols="20" required></textarea>
+      </div>
+      <div class="inform">
+        <label><strong>Do you want to send?</strong></label>
+        <input type="checkbox" name="" value="" required>
+      </div>
+      <input type="submit" class="submiting inform" >
     </form>
 
-    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
